@@ -21,7 +21,6 @@ Do the following:
 */
 
 
-
 /*
 Task 1b - Values
 
@@ -60,8 +59,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a,b){
+  return a * b;
 }
 
 
@@ -76,8 +75,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanYears){
+  return humanYears * 7;
 }
 
 
@@ -109,9 +108,26 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight, age) {
+  if (age <= 0.334) {
+    return weight * 0.1;
+  } else if (age <= 0.582) {
+    return weight * 0.05;
+  } else if (age < 1) {
+    return weight * 0.04;
+  } else if (age >= 1 && weight <= 5) {
+    return weight * 0.05;
+  } else if (age >= 1 && weight <= 10) {
+    return weight * 0.04;
+  } else if (age >= 1 && weight <= 15) {
+    return weight * 0.03;
+  } else if(age >= 1 && weight > 15); {
+    return weight * 0.02;
+  }
 }
+
+console.log('task 3', hungryDog(1, 15));
+
 
 
 
@@ -140,7 +156,7 @@ if(computer <= 0.34){
   computer = 'rock';
 } else if(computer <= 0.67){
   computer = 'paper';
-} else(computer > 0.67){
+} else(computer > 0.67);{
   computer = 'scissors';
 }
 
@@ -173,8 +189,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers){
+  return kilometers * 0.621371
 }
 
 
@@ -187,8 +203,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48;
 }
 
 
@@ -227,10 +243,21 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if(score < 60){
+  return 'you got an F';
+}else if(score < 70){
+  return 'you got a D';
+}else if (score < 80) {
+  return 'you got a C';
+}else if (score < 90) {
+  return 'you got a B';
+} else if (score <= 100) {
+  return 'you got an A';
+}
 }
 
+console.log(grade(70));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -251,9 +278,8 @@ function vowelCounter(/*add your code here*/) {
 }
 
 
-
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-function foo(){
+function foo() {
   console.log('its working');
   return 'bar';
 }
