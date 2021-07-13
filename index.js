@@ -20,6 +20,12 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 16
+if(votingAge >= 18){
+  console.log(true);
+}else{
+  console.log(false);
+}
 
 /*
 Task 1b - Values
@@ -32,8 +38,12 @@ Do the following:
    HINT: no function required
 */
 
-
-
+let tree = 3;
+let bush = 4;
+if(bush === 4){
+  tree = 5
+}
+console.log(tree);
 
 
 /*
@@ -47,8 +57,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+const party = '1999';
+console.log('task 1 c:', Number(party));
 
 /*
 Task 1d - Multiply
@@ -63,7 +73,7 @@ function multiply(a,b){
   return a * b;
 }
 
-
+console.log('task 1 d:', multiply(9,9));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -126,7 +136,7 @@ function hungryDog(weight, age) {
   }
 }
 
-console.log('task 3', hungryDog(1, 15));
+console.log('task 3', hungryDog(15, 1));
 
 
 
